@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title id="Title1">Binary to Decimal Converter</title>
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<link href="/assets/css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="/assets/css/all.css" rel="stylesheet" type="text/css"/>  
+	<link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+	<script src="/assets/js/Javascript.js"></script>
+	<script src="/assets/js/jquery-3.5.0.min.js"></script>
+	<script src="/assets/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+	<div id="border">
+		<h4 id="header1">Number Systems Converter</h4>
+	</div>
+	<br>
+	<br>
+	<p class="word" id="from">From:</p>
+	<select class="custom-select" id="fieldSearchSelect1" onchange="features();">
+                <option value="1" >Unary</option>
+                <option value="2"selected>Binary</option>
+				<option value="3">Ternary</option>
+				<option value="4">Quaternary</option>
+				<option value="5">Quinary</option>
+				<option value="6">Senary</option>
+				<option value="7">Septenary</option>
+				<option value="8">Octal</option>
+				<option value="9">Nonary</option>
+				<option value="10">Decimal</option>
+				<option value="11">Undecimal</option>
+				<option value="12">Duodecimal</option>
+				<option value="13">Tridecimal</option>
+				<option value="14">Tetradecimal</option>
+				<option value="15">Pentadecimal</option>
+				<option value="16">Hexadecimal</option>
+    </select>
+	<br>
+	<br>
+	<p class="word" id="to">To:</p>
+	<select class="custom-select" id="fieldSearchSelect2" onchange="features();">
+                <option value="1" >Unary</option>
+                <option value="2">Binary</option>
+				<option value="3">Ternary</option>
+				<option value="4">Quaternary</option>
+				<option value="5">Quinary</option>
+				<option value="6">Senary</option>
+				<option value="7">Septenary</option>
+				<option value="8">Octal</option>
+				<option value="9">Nonary</option>
+				<option value="10" selected>Decimal</option>
+				<option value="11">Undecimal</option>
+				<option value="12">Duodecimal</option>
+				<option value="13">Tridecimal</option>
+				<option value="14">Tetradecimal</option>
+				<option value="15">Pentadecimal</option>
+				<option value="16">Hexadecimal</option>
+    </select>
+	<br><br><hr><br>
+	<p id="label1" class="word">Enter a Binary Number:</p>
+	<input id="inputBox" type="text" placeholder="Please enter a value...." onkeyup="validation();">
+	<br><br><br><br>
+    <button type="submit" id="Convert" onClick="convertManager();" class="btn btn-success">Convert!</button>
+	<button type="submit" id="Reset" onClick="Reset();" class="btn btn-danger">Reset!</button>
+	<button type="submit" id="Swap" onClick="Swap();" class="btn btn-primary">Swap!</button>
+	<p id= "warning1" class="word">Please choose two different number systems for conversion!</p> 
+	<p id="warning2" class="word">Please enter a valid number</p>
+	<br><br><br>
+	<p id="label2" class="word">Decimal Number Output:</p>
+	<div id="outputBox"></div>
+	<br><br><br><br><br>
+	<p id= "label3" class="word">Calculation:</p>
+	<div id="calculationBox"></div>
+	<div id="calculationBox2"></div>
+	<br><br><br><br>
+</body>
+</html>
