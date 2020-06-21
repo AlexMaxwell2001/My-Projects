@@ -1,4 +1,3 @@
-//This code was influenced by Lec 22 L01-L02 Of the notes
 const express = require('express');         
 const bodyParser = require('body-parser');  
 const app = express();                     
